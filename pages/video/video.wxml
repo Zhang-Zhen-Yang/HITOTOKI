@@ -1,0 +1,4 @@
+<view class="myvideo">
+    <video src="{{video_url}}" style="width:750rpx;"></video>
+    <button bindtap="open">打开视频</button>
+</view>
