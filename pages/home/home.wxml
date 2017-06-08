@@ -1,0 +1,14 @@
+<!--pages/home/home.wxml-->
+
+<view class="home-container">
+    <swiper class="home-swiper" autoplay="true" interval="2000">
+        <block wx:for="{{imgUrls}}">
+            <swiper-item>
+                <image src="{{item}}" class="slide-image"  mode="widthFix" style="width:750rpx"/>
+            </swiper-item>
+        </block>
+        
+    </swiper>
+    <text>  dfdfdf</text>
+    <image src="http://unity-chan.com/images/imgComicH2uniyon.jpg"></image>
+</view>

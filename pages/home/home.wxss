@@ -1,0 +1,11 @@
+/* pages/home/home.wxss */
+.home-container{
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:stretch;
+}
+.home-swiper{
+   width:100%;
+}
