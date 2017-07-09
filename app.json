@@ -1,9 +1,10 @@
 {
   "pages":[
+    "pages/home/home",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/video/video",
-    "pages/home/home"
+    "pages/video/video"
+    
   ],
   "window":{
     "backgroundTextStyle":"light",

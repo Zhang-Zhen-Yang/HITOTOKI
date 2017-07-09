@@ -1,15 +1,13 @@
 // pages/home/home.js
+let datas = require('./data.js');
+console.log(datas);
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    imgUrls: [
-      'http://unity-chan.com/images/imgComicH2uniyon.jpg',
-      'http://unity-chan.com/images/imgComicH2nochoice.jpg',
-      'http://unity-chan.com/images/imgComicH2unity-4.jpg'     
-    ],
+    goodsList:datas.data
   },
 
   /**
