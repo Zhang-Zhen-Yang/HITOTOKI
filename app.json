@@ -1,15 +1,47 @@
 {
-  "pages":[
+  "pages": [
     "pages/home/home",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/video/video"
-    
+    "pages/video/video",
+    "pages/clock/clock"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#feabbb",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "image/home.png",
+        "selectedIconPath": "image/home_HL.png",
+        "text": "TOP"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/about.png",
+        "selectedIconPath": "image/icon_API_HL.png",
+        "text": "ABOUT"
+      },
+      {
+        "pagePath": "pages/video/video",
+        "iconPath": "image/icon_API.png",
+        "selectedIconPath": "image/icon_API_HL.png",
+        "text": "PRODUCT"
+      },
+      {
+        "pagePath": "pages/clock/clock",
+        "iconPath": "image/clock.png",
+        "selectedIconPath": "image/clock.png",
+        "text": "CLOCK"
+      }
+    ]
   }
 }
