@@ -1,2 +1,20 @@
 <!--clock.wxml-->
-<text>clock.wxml</text>
+<view class="container">
+  <view class="classname" style="background-color:red;position:relative;height:700rpx;flex:1;width:700rpx;">    
+    <image src="http://www.kingjim.co.jp/hitotoki/img/loops/1440/{{index}}.jpg?v1" style="position:absolute;left:0;top:0;width:700rpx;height:700rpx" ></image>
+    <image src="../../image/clockbg.png" style="position:absolute;left:0;top:0;width:700rpx;height:700rpx" ></image>
+  </view>
+  <view>
+    <text>何気ないものに
+    ひとてま加えることで、
+    一分一秒、かけがえのない時間を
+    過ごしてほしい。
+    そんな想いを込めて、
+    24時間＝1440分を、
+    1分ごとに異なる全1440パターンの
+    小道具の組み合わせで表現しました。
+    </text>
+  </view>
+
+
+</view>

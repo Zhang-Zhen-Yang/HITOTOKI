@@ -26,20 +26,20 @@
       },
       {
         "pagePath": "pages/index/index",
-        "iconPath": "image/about.png",
-        "selectedIconPath": "image/icon_API_HL.png",
+        "iconPath": "image/instagram.png",
+        "selectedIconPath": "image/instagram_HL.png",
         "text": "ABOUT"
       },
       {
         "pagePath": "pages/video/video",
-        "iconPath": "image/icon_API.png",
-        "selectedIconPath": "image/icon_API_HL.png",
+        "iconPath": "image/compass.png",
+        "selectedIconPath": "image/compass_HL.png",
         "text": "PRODUCT"
       },
       {
         "pagePath": "pages/clock/clock",
         "iconPath": "image/clock.png",
-        "selectedIconPath": "image/clock.png",
+        "selectedIconPath": "image/clock_HL.png",
         "text": "CLOCK"
       }
     ]

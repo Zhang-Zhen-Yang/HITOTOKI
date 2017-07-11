@@ -5,14 +5,20 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    clock:'http://www.kingjim.co.jp/hitotoki/img/loops/1440/1163.jpg?v1',
+    index:1
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    let index = 1;
+    /*setInterval(()=>{
+      this.setData({
+        index:index++
+      });
+    },1000)*/
   },
 
   /**
