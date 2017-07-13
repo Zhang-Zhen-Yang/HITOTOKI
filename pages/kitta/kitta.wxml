@@ -1,0 +1,10 @@
+<!--kitta.wxml-->
+<view class="container kitta-container">
+  <image src="http://www.kingjim.co.jp/sp/kitta/images/logo-kitta.png" mode="widthFix" style="width:500rpx;"></image>
+  <view class="infinity-scroll-warp" style="">
+    <view class="infinity-scroll" 
+    style="height:700rpx;width:750rpx;background-image:url(http://www.kingjim.co.jp/sp/kitta/images/hero-image-05.png);">
+    </view>
+  </view>
+  
+</view>

@@ -1,0 +1,32 @@
+/* kitta.wxss */
+.kitta-container{
+  padding:10rpx 0;
+}
+.infinity-scroll{
+  animation: scroll 40s infinite;
+  animation-timing-function: linear;
+  background-position-x: 200rpx;
+  height:700rpx;
+  width:750rpx;
+  background-image:url(http://www.kingjim.co.jp/sp/kitta/images/hero-image-05.png);
+  background-size:auto 700rpx;
+}
+@keyframes scroll{
+  0%{
+    background-position-x: 0%;
+    
+  }
+  100%{
+    background-position-x: 111%;
+    
+  }
+}
+
+.infinity-scroll-warp{
+  margin-top:50rpx;
+  background-image:url(http://www.kingjim.co.jp/sp/kitta/images/hero-image-04.png);
+  background-size:auto 780rpx;
+  padding:30rpx;
+  height:780rpx;
+  background-repeat: repeat-x;
+}

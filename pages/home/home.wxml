@@ -1,5 +1,5 @@
 <!--pages/home/home.wxml-->
-<swiper class="home-swiper" autoplay="true" interval="20000" style="height:450rpx;" indicator-dots="true" indicator-active-color="#ecda1d">
+<swiper class="home-swiper" autoplay="true" interval="2000" style="height:450rpx;" indicator-dots="true" indicator-active-color="#ecda1d">
     <block wx:for="{{swipeList}}">
         <swiper-item>
             <image src="{{item.img}}" class="slide-image"  mode="widthFix" style="width:750rpx;"/>
@@ -21,8 +21,8 @@
           <view wx:for="{{item.message}}" class="product-details-message">
             {{item}}
           </view>
-          <view class="projuct-details-btn">
-            商品詳細ページ
+          <view class="projuct-details-btn" bindtap="">
+            <navigator url="../kitta/kitta">商品詳細ページ</navigator>
           </view>
         </view>
       </block>
