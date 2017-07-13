@@ -1,5 +1,20 @@
 module.exports={
   data:[
+    { 
+      tag: 'KITTA', 
+      img: 'http://www.kingjim.co.jp/hitotoki/product/asset/kitta.jpg?20170410', 
+      link: 'KITTA', 
+      bgColor: '#cde6cc', 
+      title:'KITTA',
+      message:[
+        'カード型、持ち運びやすいマスキングテープ',
+        '使いやすい長さに切った、',
+        'あたらしい形のマスキングテープです。',
+        /*'かさばらないので、何種類もの柄を持ち歩き、',
+        'いつでもどこでも楽しむことができます。',
+        '本体 ¥320+消費税〜'*/
+      ]
+    },
     { tag:'暮らしのキロク',img:'http://www.kingjim.co.jp/hitotoki/asset/kiroku2.jpg?20170410'},
     { tag:'ガーリーテプラ',img: 'http://www.kingjim.co.jp/hitotoki/asset/girly-tepra.jpg?20170410' },
     { tag: 'こはる', img: 'http://www.kingjim.co.jp/hitotoki/asset/coharu3.jpg?20170410' },

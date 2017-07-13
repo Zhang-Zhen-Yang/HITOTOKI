@@ -7,7 +7,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-    goodsList:datas.data
+    goodsList:datas.data,
+    swipeList:[
+      { img:'http://www.kingjim.co.jp/sp/coharu_mp20/images/case-img-01.jpg'},
+      { img:'http://www.kingjim.co.jp/sp/coharu_mp20/images/case-img-02.jpg'},
+      { img:'http://www.kingjim.co.jp/sp/coharu_mp20/images/case-img-03.jpg'},
+      { img:'http://www.kingjim.co.jp/sp/masurie/images/img_mv_02.png',tag:'masurie'},
+      { img:'http://www.kingjim.co.jp/sp/masurie/images/img_mv_01.png',tag:'masurie'}
+    ]
   },
 
   /**

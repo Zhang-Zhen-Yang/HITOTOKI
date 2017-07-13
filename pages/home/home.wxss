@@ -7,6 +7,7 @@
     align-items:stretch;
     /*background-color: red;*/
     padding:0 10px;
+    background-color: #f8f8f8;
 }
 #top{
   display: flex;
@@ -15,7 +16,7 @@
 
 }
 #top image{
-  width:100rpx;
+  width:300rpx;
   
 }
 
@@ -26,4 +27,28 @@
   flex:1;
   /*background-color:yellow;*/
   justify-content: space-between;
+}
+.shop-list image{
+  margin-bottom:20rpx;
+}
+.shop-list .word-block{
+  width:345rpx;
+  height:345rpx;
+  padding:20rpx;
+  box-sizing:border-box;
+  line-height:1em;
+  font-family: 黑体;
+}
+.projuct-details-btn{
+  display: inline-block;
+  color:white;
+  padding:15rpx 20rpx;
+  font-size:25rpx;
+  background-color:#999;
+}
+.word-block .product-details-message{
+  font-size:20rpx;
+  margin-top:0;
+  line-height:1.5em;
+  padding:5rpx;
 }
