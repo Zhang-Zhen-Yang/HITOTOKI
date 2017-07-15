@@ -5,7 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-   
+    nav:[
+      { img:'http://www.kingjim.co.jp/sp/kitta/images/nav-01.png'},
+      { img:'http://www.kingjim.co.jp/sp/kitta/images/nav-02.png'},
+      { img:'http://www.kingjim.co.jp/sp/kitta/images/nav-03.png'}
+    ],
+    navActiveIndex:0
   },
 
   /**

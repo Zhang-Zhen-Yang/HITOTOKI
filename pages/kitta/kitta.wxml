@@ -1,10 +1,21 @@
 <!--kitta.wxml-->
 <view class="container kitta-container">
-  <image src="http://www.kingjim.co.jp/sp/kitta/images/logo-kitta.png" mode="widthFix" style="width:500rpx;"></image>
+  <view class="kitta-top">
+    <view  wx:for="{{nav}}" wx:for-index="idx" class="nav-item " style="background-image:url({{item.img}})">
+    {{idx==navActiveIndex}}
+    </view>
+  </view>
+
+  <image src="http://www.kingjim.co.jp/sp/kitta/images/logo-kitta.png" mode="widthFix" style="width:500rpx;margin-top:100rpx;"></image>
   <view class="infinity-scroll-warp" style="">
     <view class="infinity-scroll" 
     style="height:700rpx;width:750rpx;background-image:url(http://www.kingjim.co.jp/sp/kitta/images/hero-image-05.png);">
     </view>
   </view>
+  
+      <image src="http://www.kingjim.co.jp/sp/kitta/images/reason-01.png" mode="widthFix" style="width:100%;"></image>
+      <image src="http://www.kingjim.co.jp/sp/kitta/images/reason-02.png" mode="widthFix" style="width:100%;"></image>
+ 
+ 
   
 </view>
