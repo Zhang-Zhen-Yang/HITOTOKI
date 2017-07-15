@@ -1,21 +1,73 @@
 <!--kitta.wxml-->
 <view class="container kitta-container">
   <view class="kitta-top">
-    <view  wx:for="{{nav}}" wx:for-index="idx" class="nav-item " style="background-image:url({{item.img}})">
-    {{idx==navActiveIndex}}
-    </view>
+     <view  wx:for="{{nav}}" 
+      wx:for-index="idx"
+      data-index="{{idx}}"
+      bindtap="setCurrent"
+      class="nav-item " 
+      style="background-image:url({{item.img}});border-bottom:5rpx solid {{idx==navActiveIndex?'red':'transparent'}}">
+     </view>
   </view>
+  
+  <swiper class="kitta-swiper" autoplay="{{false}}" style="height:calc(100% - 100rpx);width:750rpx;margin-top:100rpx;" 
+    current="{{swipeIndex}}"
+    bindchange="swipeChange" 
+    bindtap="tap">
+    <block>
+        <swiper-item>          
+            <scroll-view scroll-y style="height:100%;position:relative;">
+              <image src="http://www.kingjim.co.jp/sp/kitta/images/logo-kitta.png" mode="widthFix" 
+              style="display:block;width:500rpx;margin:50rpx auto;">
+              </image>
+              <view class="infinity-scroll-warp" style="">
+                <view class="infinity-scroll" 
+                style="height:700rpx;width:750rpx;background-image:url(http://www.kingjim.co.jp/sp/kitta/images/hero-image-05.png);">
+                </view>
+              </view>
+            </scroll-view>
 
-  <image src="http://www.kingjim.co.jp/sp/kitta/images/logo-kitta.png" mode="widthFix" style="width:500rpx;margin-top:100rpx;"></image>
-  <view class="infinity-scroll-warp" style="">
-    <view class="infinity-scroll" 
-    style="height:700rpx;width:750rpx;background-image:url(http://www.kingjim.co.jp/sp/kitta/images/hero-image-05.png);">
-    </view>
-  </view>
-  
-      <image src="http://www.kingjim.co.jp/sp/kitta/images/reason-01.png" mode="widthFix" style="width:100%;"></image>
-      <image src="http://www.kingjim.co.jp/sp/kitta/images/reason-02.png" mode="widthFix" style="width:100%;"></image>
- 
- 
-  
+        </swiper-item>
+    </block>
+
+    <!--fgf-->
+    <block>
+        <swiper-item >
+          <scroll-view scroll-y style="height:100%;">
+            <image src="http://www.kingjim.co.jp/sp/kitta/images/reason-02.png"  mode="widthFix" style="width:750rpx;"/>
+            <image src="http://www.kingjim.co.jp/sp/kitta/images/reason-01.png" mode="widthFix" style="width:100%;"></image>
+            <image src="http://www.kingjim.co.jp/sp/kitta/images/reason-02.png" mode="widthFix" style="width:100%;"></image>
+          </scroll-view>
+        </swiper-item>
+    </block>
+
+    <!--ffgfgf-->
+    <block>
+        <swiper-item >
+          <scroll-view scroll-y style="height:100%;">
+            <image src="{{gallery[galleryIndex].img}}"  mode="widthFix" style="width:750rpx;"/>
+            <view class="classname" style="text-align:center;width:90%;margin:0 auto;padding:50rpx 20rpx;">
+              <text style="font-family:黑体;line-height:1.5em;">{{gallery[galleryIndex].msg}}</text>
+            </view>
+            
+            <scroll-view scroll-x style="width:100%;position:absolute;bottom:0;">
+              <view class="classname" style="width:3100rpx;display:flex;justify-content:space-between;">
+                  <image wx:for="{{gallery}}" 
+                  src="{{item.img}}" 
+                  wx:for-index="idx" 
+                  data-index="{{idx}}" 
+                  mode="widthFix"  
+                  style="width:300rpx;"
+                  bindtap="gallerySelect"></image>
+              </view>              
+            </scroll-view>
+
+          </scroll-view>
+        </swiper-item>
+    </block> 
+
+
+  </swiper>
+
+      
 </view>

@@ -10,7 +10,22 @@ Page({
       { img:'http://www.kingjim.co.jp/sp/kitta/images/nav-02.png'},
       { img:'http://www.kingjim.co.jp/sp/kitta/images/nav-03.png'}
     ],
-    navActiveIndex:0
+    swipeIndex:0,
+    navActiveIndex:0,
+
+    gallery:[
+      { img: 'http://www.kingjim.co.jp/sp/kitta/images/gallery-01.jpg', msg:'旅の記録を貼りつけて。'},
+      { img: 'http://www.kingjim.co.jp/sp/kitta/images/gallery-04.jpg', msg:'ちょっとしたメモやコトバに添えて。'},
+      { img: 'http://www.kingjim.co.jp/sp/kitta/images/gallery-03.jpg', msg: 'ペンケースやポーチに入れて。'},
+      { img: 'http://www.kingjim.co.jp/sp/kitta/images/gallery-02.jpg', msg: '日々のスナップを留めて。'},
+      { img: 'http://www.kingjim.co.jp/sp/kitta/images/gallery-05.jpg', msg: 'ノートや手帳のインデックスとして。'}, 
+      { img: 'http://www.kingjim.co.jp/sp/kitta/images/gallery-06.jpg', msg: 'ラッピングのタグに貼りつけて、ギフトのアクセントに。'},
+      { img: 'http://www.kingjim.co.jp/sp/kitta/images/gallery-07.jpg', msg: 'メッセージカードのデコレーションとして。'}, 
+      { img: 'http://www.kingjim.co.jp/sp/kitta/images/gallery-08.jpg', msg: 'カードサイズなので、手帳のポケットにもすっきり。'}, 
+      { img: 'http://www.kingjim.co.jp/sp/kitta/images/gallery-09.jpg', msg: 'クリップを装飾して、色とりどりに。'}, 
+      { img: 'http://www.kingjim.co.jp/sp/kitta/images/gallery-10.jpg', msg: '分類用の見出しとして。'}, 
+    ],
+    galleryIndex:5
   },
 
   /**
@@ -67,5 +82,28 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  swipeChange:function(e){
+    console.log(e);
+    this.setData({
+      navActiveIndex:e.detail.current
+    });
+  },
+  tap:function(){
+    console.log('ddd');
+  },
+  setCurrent:function(e){
+    let index = e.currentTarget.dataset.index;
+    this.setData({
+      swipeIndex: index,
+      navActiveIndex: index
+    });
+    console.log(e);
+  },
+  gallerySelect:function(e){
+    let index = e.currentTarget.dataset.index;
+    this.setData({
+      galleryIndex:index
+    })
   }
 })

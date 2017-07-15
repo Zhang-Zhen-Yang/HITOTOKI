@@ -1,6 +1,8 @@
 /* kitta.wxss */
 .kitta-container{
-  padding:10rpx 0;
+  position:fixed;
+  padding:0 0;
+  height:100%;
 }
 .infinity-scroll{
   animation: scroll 40s infinite;
@@ -37,7 +39,6 @@
   align-items: stretch;
   width:100%;
   height:100rpx;
-  /*background-color:red;*/
   background-color:white;
   position: fixed;
   top:0;
