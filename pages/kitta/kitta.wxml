@@ -14,12 +14,19 @@
     current="{{swipeIndex}}"
     bindchange="swipeChange" 
     bindtap="tap">
+    <!--first page-->
     <block>
         <swiper-item>          
             <scroll-view scroll-y style="height:100%;position:relative;">
-              <image src="http://www.kingjim.co.jp/sp/kitta/images/logo-kitta.png" mode="widthFix" 
-              style="display:block;width:500rpx;margin:50rpx auto;">
-              </image>
+              <view class="kitta-tte-fadein">
+                <image class="kitta-tte-fadein-title" mode="widthFix" src="http://www.kingjim.co.jp/sp/kitta/images/logo-kitta.png"></image>
+                <image  wx:for="{{kittaTTe}}" 
+                  wx:for-index="idx" 
+                  src="{{item.img}}" 
+                  mode="widthFix" 
+                  style="opacity:{{item.opacity}};transition-delay:{{idx*2}}s"></image>
+              </view>
+
               <view class="infinity-scroll-warp" style="">
                 <view class="infinity-scroll" 
                 style="height:700rpx;width:750rpx;background-image:url(http://www.kingjim.co.jp/sp/kitta/images/hero-image-05.png);">
@@ -30,18 +37,28 @@
         </swiper-item>
     </block>
 
-    <!--fgf-->
+    <!--second page-->
     <block>
         <swiper-item >
           <scroll-view scroll-y style="height:100%;">
-            <image src="http://www.kingjim.co.jp/sp/kitta/images/reason-02.png"  mode="widthFix" style="width:750rpx;"/>
-            <image src="http://www.kingjim.co.jp/sp/kitta/images/reason-01.png" mode="widthFix" style="width:100%;"></image>
-            <image src="http://www.kingjim.co.jp/sp/kitta/images/reason-02.png" mode="widthFix" style="width:100%;"></image>
+            <image src="http://www.kingjim.co.jp/sp/kitta/images/type-basic.png"  mode="widthFix" style="width:750rpx;"/>
+            <view class="line-up-text-wrap">
+              <text>
+              人気のプレーンやドットの定番柄に加えて手描きのイラストシリーズもたくさん仲間入り。
+              </text>
+            </view>
+           
+            <image src="http://www.kingjim.co.jp/sp/kitta/images/type-slim.png" mode="widthFix" style="width:100%;"></image>
+            <view class="line-up-text-wrap">
+              <text>
+              7mm幅のスリムタイプが増えました。マンスリー手帳のデコレーションなど、用途が広がります。
+              </text>
+            </view>
           </scroll-view>
         </swiper-item>
     </block>
 
-    <!--ffgfgf-->
+    <!--last page-->
     <block>
         <swiper-item >
           <scroll-view scroll-y style="height:100%;">

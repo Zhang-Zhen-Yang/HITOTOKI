@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    //顶部导航
     nav:[
       { img:'http://www.kingjim.co.jp/sp/kitta/images/nav-01.png'},
       { img:'http://www.kingjim.co.jp/sp/kitta/images/nav-02.png'},
@@ -12,7 +13,13 @@ Page({
     ],
     swipeIndex:0,
     navActiveIndex:0,
+    kittaTTe:[
+      { img:'http://www.kingjim.co.jp/sp/kitta/images/hero-image-01.png',opacity:0},
+      { img:'http://www.kingjim.co.jp/sp/kitta/images/hero-image-02.png',opacity:0},
+      { img:'http://www.kingjim.co.jp/sp/kitta/images/hero-image-03.png',opacity:0}
+    ],
 
+    //相册
     gallery:[
       { img: 'http://www.kingjim.co.jp/sp/kitta/images/gallery-01.jpg', msg:'旅の記録を貼りつけて。'},
       { img: 'http://www.kingjim.co.jp/sp/kitta/images/gallery-04.jpg', msg:'ちょっとしたメモやコトバに添えて。'},
@@ -32,14 +39,14 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    
+    this.startFading();
   },
 
   /**
@@ -105,5 +112,16 @@ Page({
     this.setData({
       galleryIndex:index
     })
+  },
+  startFading(){
+    console.log('startFading');
+    let oData = this.data.kittaTTe;
+    oData.forEach((item)=>{
+        item.opacity = 1;
+    })
+    console.log(oData);
+    this.setData({
+      kittaTTe: oData
+    });
   }
 })
