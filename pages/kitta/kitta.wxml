@@ -47,14 +47,39 @@
               人気のプレーンやドットの定番柄に加えて手描きのイラストシリーズもたくさん仲間入り。
               </text>
             </view>
-           
+            <view class="line-up-base-warp">
+              <view class="line-up-base-item" wx:for="{{lineup.base}}" wx:for-index="idx">
+                <image src="{{lineup.baseBaseUrl}}{{item.img}}" mode="widthFix" bindtap="showDetails" data-index="{{idx}}" data-type="base"></image>
+                <text>{{item.tag}}</text>
+              </view>
+
+              <view class="line-up-base-item" wx:for="{{lineup.baseNew}}" wx:for-index="idx">
+                <image src="{{lineup.baseBaseUrl}}{{item.img}}" mode="widthFix" bindtap="showDetails" data-index="{{idx}}" data-type="baseNew"></image>
+                <text>{{item.tag}}</text>
+              </view>
+            
+            </view>           
             <image src="http://www.kingjim.co.jp/sp/kitta/images/type-slim.png" mode="widthFix" style="width:100%;"></image>
             <view class="line-up-text-wrap">
               <text>
               7mm幅のスリムタイプが増えました。マンスリー手帳のデコレーションなど、用途が広がります。
               </text>
             </view>
+            <view class="line-up-base-warp">
+              <view class="line-up-base-item" wx:for="{{lineup.slim}}" wx:for-index="idx">
+                <image src="{{lineup.slimBaseUrl}}{{item.img}}" mode="widthFix" bindtap="showDetails" data-index="{{idx}}" data-type="slim"></image>
+                <text>{{item.tag}}</text>
+              </view>            
+            </view>  
           </scroll-view>
+          <!--details-->
+          <view class="line-up-details-wrap" style="display:{{lineup.show?'block':'none'}}">
+            <view class="line-up-details" >
+              <image class="line-up-details-content" src="{{lineup.detailsImg}}" mode="aspectFit" ></image>      
+              <image class="line-up-details-dismiss" src="{{lineup.dismiss}}" bindtap="lineupDetailsDismiss"></image>
+            </view>
+          </view>
+          
         </swiper-item>
     </block>
 
