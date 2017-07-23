@@ -73,10 +73,10 @@
             </view>  
           </scroll-view>
           <!--details-->
-          <view class="line-up-details-wrap" style="display:{{lineup.show?'block':'none'}}">
+          <view class="line-up-details-wrap" style="display:{{lineup.show?'block':'none'}}" bindtap="lineupDetailsDismiss" data-dismiss="true">
             <view class="line-up-details" >
               <image class="line-up-details-content" src="{{lineup.detailsImg}}" mode="aspectFit" ></image>      
-              <image class="line-up-details-dismiss" src="{{lineup.dismiss}}" bindtap="lineupDetailsDismiss"></image>
+              <image class="line-up-details-dismiss" src="{{lineup.dismiss}}" bindtap="lineupDetailsDismiss" data-dismiss="true"></image>
             </view>
           </view>
           

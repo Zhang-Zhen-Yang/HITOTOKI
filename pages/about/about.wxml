@@ -1,0 +1,10 @@
+<!--about.wxml-->
+<view class="about-top">
+  <image src="http://www.kingjim.co.jp/hitotoki/img/logo_mini_pc.png" mode="widthFix">
+  </image>
+</view>
+<view wx:for="{{about}}" class="about-wrap" wx:for-index="idx">
+  <image src="{{item.img}}" mode="widthFix" wx:if="{{idx%2==0}}"></image>
+  <image src="{{item.wimg}}" mode="widthFix"></image>
+  <image src="{{item.img}}" mode="widthFix" wx:if="{{idx%2!=0}}"></image>
+</view>

@@ -5,7 +5,8 @@
     "pages/logs/logs",
     "pages/video/video",
     "pages/clock/clock",
-    "pages/kitta/kitta"
+    "pages/kitta/kitta",
+    "pages/about/about"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -26,7 +27,7 @@
         "text": "TOP"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/about/about",
         "iconPath": "image/instagram.png",
         "selectedIconPath": "image/instagram_H.png",
         "text": "ABOUT"

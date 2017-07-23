@@ -183,11 +183,16 @@ Page({
   },
   //
   lineupDetailsDismiss(e){
-    let lineup = this.data.lineup;
+    let lineup = this.data.lineup,
+      {dismiss} = e.target.dataset;
+      console.log(e);
       lineup.show = false;
-    this.setData({
-      lineup
-    });
+      if (dismiss){
+      this.setData({
+        lineup
+      });
+    }
+    
   },
   //
   showDetails(e){

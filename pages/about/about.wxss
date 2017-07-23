@@ -1,0 +1,16 @@
+/* about.wxss */
+.about-wrap{
+  display: flex;
+}
+.about-wrap image{
+  flex:1;
+  flex-direction: row-reverse;
+}
+.about-top{
+  display: flex;
+  justify-content: center;
+  padding:50rpx;
+}
+.about-top image{
+  width:300rpx;
+}
